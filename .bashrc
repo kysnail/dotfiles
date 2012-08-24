@@ -35,7 +35,7 @@ CYAN_BOLD="\[\033[36;1m\]"
 GREEN_BOLD="\[\033[32;1m\]"
 LIGHT_RED="\[\e[31;1m\]"
 
-PS1="\n[$PURPLE$(date +"%D-%T")$NO_COLOUR]\
+PS1="\n[$PURPLE$(date +"%D-%T") -> $(tty)$NO_COLOUR]\
 [$LIGHT_RED$(echo jobs):\j$NO_COLOUR]\
 [$CYAN_BOLD\u$NO_COLOUR@$GREEN_BOLD\h$NO_COLOUR:\w$GREEN_BOLD\$(git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/')$NO_COLOUR]\n==> $NO_COLOUR"
 
